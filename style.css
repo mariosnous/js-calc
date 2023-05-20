@@ -1,0 +1,96 @@
+body{
+    overflow: hidden;
+    background: #1A1A1A;
+    margin: none;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+}
+
+.calculator{
+    height: 700px;
+    width: 400px;
+    margin: auto;
+    border-radius: 4px;
+    background-color: bisque;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 4px 3px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+#userInput{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    background: #FFFFFF;
+    text-align: right;
+    direction: ltr;
+    outline: none;
+    border: 3px solid #424242;
+    font-size: 25px;
+    margin-bottom: 5rem;
+    border-radius: 6px;
+
+}
+
+.btn{
+    width: 24%;
+    height: 12%;
+    border-radius: 6px;
+    border:none;
+    outline: none;
+    margin-top: 6px;
+    background: #292929;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+  
+}
+
+.btnEqual{
+    width: 99.2%;
+    height: 12%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    background: #FF8A65;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: #222222
+}
+.btnEqual:hover{
+    background-color: #ffa88e;
+}
+
+@media(max-width:480px){
+    .btn{
+        width:23.4%;
+    }
+}
+
+@media(max-width:320px) {
+    .btn {
+        width: 23%;
+    }
+}
+
+input::placeholder{
+    font-size: 25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto+Mono&display=swap');
+
+.btn,.btnEqual{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
